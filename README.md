@@ -1,6 +1,8 @@
 remark-react-codemirror
 =========================
 
+[![build status](https://secure.travis-ci.org/craftzdog/remark-react-codemirror.svg)](http://travis-ci.org/craftzdog/remark-react-codemirror)
+
 Syntax highlighting for [remark-react](https://github.com/mapbox/remark-react) through [CodeMirror](https://codemirror.net/).
 
 ## Usage
