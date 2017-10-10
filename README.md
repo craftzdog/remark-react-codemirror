@@ -13,6 +13,7 @@ import reactRenderer from 'remark-react'
 import sanitizeGhSchema from 'hast-util-sanitize/lib/github.json'
 
 import CodeMirror from 'codemirror'
+import 'codemirror/mode/meta'
 import 'codemirror/addon/runmode/runmode'
 import 'codemirror/mode/javascript/javascript'
 import highlighter from 'remark-react-codemirror'

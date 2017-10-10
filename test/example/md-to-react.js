@@ -6,6 +6,7 @@ import sanitizeGhSchema from 'hast-util-sanitize/lib/github.json'
 
 import CodeMirror from 'codemirror'
 import 'codemirror/addon/runmode/runmode'
+import 'codemirror/mode/meta'
 import 'codemirror/mode/javascript/javascript'
 import highlighter from '../../lib'
 

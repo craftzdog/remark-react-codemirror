@@ -8,7 +8,7 @@ describe('highlight', () => {
   it('render code block element using CodeMirror', () => {
     const codeBlockText = 'function blah(arg1) {};'
     const inputMarkdown = `
-\`\`\`javascript
+\`\`\`js
 ${codeBlockText}
 \`\`\`
 `
