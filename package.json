@@ -1,6 +1,6 @@
 {
   "name": "remark-react-codemirror",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Syntax highlighting for remark-react through CodeMirror",
   "main": "lib/index.js",
   "scripts": {
