@@ -37,7 +37,7 @@ remark().use(reactRenderer, {
 
 ### Notes
 
-- The default santization schema (GitHub's) excludes `className`, but we want those `hljs-*` classes for our highlighting! Hence the custom object passed to `santization`.
+- The default santization schema (GitHub's) excludes `className`, but we want those `cm-*` classes for our highlighting! Hence the custom object passed to `santization`.
 - You'll need stylings for the classes that [CodeMirror](https://github.com/codemirror/CodeMirror) adds. You can choose from a bunch bunch of pre-made [stylesheets](https://github.com/codemirror/CodeMirror/tree/master/theme).
 
 ## License
