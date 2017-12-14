@@ -55,7 +55,7 @@
     "remark-react": "^4.0.1"
   },
   "dependencies": {
-    "react-codemirror-runmode": "^1.0.3"
+    "react-codemirror-runmode": "^1.0.4"
   },
   "peerDependencies": {
     "prop-types": "^15.6.0",
