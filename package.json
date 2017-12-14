@@ -7,7 +7,8 @@
     "build": "babel src -d lib",
     "watch": "babel src --watch -d lib",
     "lint": "eslint src --ext .js",
-    "test": "npm run lint && mocha --require babel-register --require test/setup.js"
+    "test": "npm run lint && mocha --require babel-register --require test/setup.js",
+    "prepublish": "npm test; npm run build"
   },
   "keywords": [
     "remark",
