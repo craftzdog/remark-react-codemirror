@@ -10,15 +10,19 @@ import 'codemirror/mode/meta'
 import 'codemirror/mode/javascript/javascript'
 import highlighter from '../../lib'
 
-const mdToReact = (markdown) => {
-  const schema = merge(sanitizeGhSchema, { attributes: { code: ['className'] } })
+const mdToReact = markdown => {
+  const schema = merge(sanitizeGhSchema, {
+    attributes: { code: ['className'] }
+  })
 
-  return remark().use(reactRenderer, {
-    sanitize: schema,
-    remarkReactComponents: {
-      code: highlighter(CodeMirror)
-    }
-  }).processSync(markdown).contents
+  return remark()
+    .use(reactRenderer, {
+      sanitize: schema,
+      remarkReactComponents: {
+        code: highlighter(CodeMirror)
+      }
+    })
+    .processSync(markdown).contents
 }
 
 export default mdToReact
