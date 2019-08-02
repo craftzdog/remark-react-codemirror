@@ -3,7 +3,8 @@
     ["@babel/preset-env", {
       "targets": { "electron": "3.0.14" },
       "useBuiltIns": "usage",
-      "debug": false
+      "debug": false,
+      "corejs": 3
     }],
     "@babel/preset-react"
   ],
