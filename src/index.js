@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Highlighter from 'react-codemirror-runmode'
 
-export default function(CodeMirror, opts = {}) {
+export default function (CodeMirror, opts = {}) {
   opts = { theme: 'default', ...opts }
   class Code extends React.Component {
     static propTypes = {

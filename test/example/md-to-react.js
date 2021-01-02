@@ -1,4 +1,5 @@
 import remark from 'remark'
+import gfm from 'remark-gfm'
 import reactRenderer from 'remark-react'
 
 import merge from 'deepmerge'
@@ -16,13 +17,14 @@ const mdToReact = markdown => {
   })
 
   return remark()
+    .use(gfm)
     .use(reactRenderer, {
       sanitize: schema,
       remarkReactComponents: {
         code: highlighter(CodeMirror)
       }
     })
-    .processSync(markdown).contents
+    .processSync(markdown).result
 }
 
 export default mdToReact
