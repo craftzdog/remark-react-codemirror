@@ -32,7 +32,7 @@ remark()
       code: highlighter(CodeMirror, { theme: "solarized" }),
     },
   })
-  .processSync(readme).contents;
+  .processSync(readme).result;
 ```
 
 ### Notes
