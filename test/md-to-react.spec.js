@@ -16,11 +16,6 @@ ${codeBlockText}
     const wrapper = mount(actual)
     assert.ok(wrapper.find('code').hasClass('cm-s-default'))
     assert.equal(wrapper.find('code > span').length, 8)
-    assert.ok(
-      wrapper
-        .find('code > span')
-        .first()
-        .hasClass('cm-keyword')
-    )
+    assert.ok(wrapper.find('code > span').first().hasClass('cm-keyword'))
   })
 })

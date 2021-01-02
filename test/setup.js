@@ -9,7 +9,7 @@ const { window } = new JSDOM('', {
 })
 global.window = window
 global.document = window.document
-Object.keys(global.window).forEach(property => {
+Object.keys(global.window).forEach((property) => {
   if (typeof global[property] === 'undefined') {
     global[property] = document.defaultView[property]
   }

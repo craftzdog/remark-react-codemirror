@@ -11,7 +11,7 @@ import 'codemirror/mode/meta'
 import 'codemirror/mode/javascript/javascript'
 import highlighter from '../../lib'
 
-const mdToReact = markdown => {
+const mdToReact = (markdown) => {
   const schema = merge(sanitizeGhSchema, {
     attributes: { code: ['className'] }
   })
